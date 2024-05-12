@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Rally</string>
+    <string name="logo_desc">Rally logo</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_google">Login with Google</string>
+    <string name="register">Register</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="display_name">Display name</string>
+    <string name="password_confirm">Password confirm</string>
+    <string name="phone_number">Phone number</string>
+    <string name="default_group_name">Group name</string>
+    <string name="default_member_count">1 member</string>
+    <string name="default_event_time">June 5 16:00</string>
+    <string name="notification_indicator">Group notification indicator</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="new_group">New group</string>
+    <string name="profile">Profile</string>
+    <string name="profile_image">Profile image</string>
+    <string name="new_display_name">New display name</string>
+    <string name="change_display_name">Change display name</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="new_password_confirm">New password confirm</string>
+    <string name="change_password">Change password</string>
+    <string name="delete_account">Delete account</string>
+    <string name="create_new_group">Create new group</string>
+    <string name="group_name">Group name</string>
+    <string name="group_description">Group description</string>
+    <string name="group_members_hint">Group members (one per line)</string>
+    <string name="event_date">Event date</string>
+    <string name="event_time">Event time</string>
+    <string name="create_group">Create group</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

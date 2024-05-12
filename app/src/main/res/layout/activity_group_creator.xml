@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".GroupCreatorActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="@string/create_new_group" />
+
+    <EditText
+        android:id="@+id/editTextGroupName"
+        android:layout_width="@dimen/form_width"
+        android:layout_height="@dimen/field_height"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/form_gap"
+        android:ems="10"
+        android:hint="@string/group_name"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextGroupDescription"
+        android:layout_width="@dimen/form_width"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/field_height"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/form_gap"
+        android:ems="10"
+        android:hint="@string/group_description"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextGroupMembers"
+        android:layout_width="@dimen/form_width"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/field_height"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/form_gap"
+        android:ems="10"
+        android:hint="@string/group_members_hint"
+        android:inputType="textMultiLine|textEmailAddress"
+        android:maxLines="3"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="@dimen/form_width"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/form_gap"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/field_height"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/event_date"
+            android:inputType="date"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editTextEventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/field_height"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/event_time"
+            android:inputType="time"
+            android:importantForAutofill="no" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createGroupBtn"
+        android:layout_width="@dimen/form_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/form_gap"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:onClick="createGroup"
+        android:text="@string/create_group" />
+
+</LinearLayout>

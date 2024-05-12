@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/profile_image"
+            app:srcCompat="@drawable/profile_icon" />
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/display_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/phone_number"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/form_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextNewDisplayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:layout_marginTop="@dimen/form_gap"
+                    android:autofillHints="name"
+                    android:ems="10"
+                    android:hint="@string/new_display_name"
+                    android:inputType="text"
+                    android:nextFocusForward="@id/changeUsernameBtn" />
+
+                <Button
+                    android:id="@+id/changeUsernameBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/form_gap"
+                    android:onClick="changeDisplayName"
+                    android:text="@string/change_display_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/form_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextOldPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:layout_marginTop="@dimen/form_gap"
+                    android:ems="10"
+                    android:hint="@string/old_password"
+                    android:inputType="textPassword"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/editTextNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:layout_marginTop="@dimen/form_gap"
+                    android:ems="10"
+                    android:hint="@string/new_password"
+                    android:inputType="textPassword"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/editTextNewPasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:layout_marginTop="@dimen/form_gap"
+                    android:ems="10"
+                    android:hint="@string/new_password_confirm"
+                    android:inputType="textPassword"
+                    android:importantForAutofill="no"
+                    android:nextFocusForward="@id/changePasswordBtn" />
+
+                <Button
+                    android:id="@+id/changePasswordBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/form_gap"
+                    android:onClick="changePassword"
+                    android:text="@string/change_password" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/deleteAccountBtn"
+                android:layout_width="@dimen/form_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_gap"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#B71C1C"
+                android:onClick="deleteAccount"
+                android:text="@string/delete_account" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
